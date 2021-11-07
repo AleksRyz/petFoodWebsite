@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <!-- Мета тег X-UA-Compatible отвечает за браузеры Microsoft IE8 IE9 IE10 IE11.. -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Мета тег viewport отвечает за "оптимизацию" под разные размеры устройства. -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- ===== Font awesome ===== -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- ===== CSS ===== -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- ===== jQuerry ===== -->
+   <script src="js/jquery-3.6.0.min.js"></script>
+
+   <title>Pet Food Website</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <!-- ===== HEADER ===== -->
+      <header class="header">
+         <div class="logo"><a href="#"> <i class="fas fa-paw"></i> shop</a></div>
+         <nav class="header__menu" id="header__menu">
+            <ul class="menu__list">
+               <li class="menu__item"><a href="#home">home</a></li>
+               <li class="menu__item"><a href="#about">about</a></li>
+               <li class="menu__item"><a href="#shop">shop</a></li>
+               <li class="menu__item"><a href="#services">services</a></li>
+               <li class="menu__item"><a href="#plan">plan</a></li>
+               <li class="menu__item"><a href="#contact">contact</a></li>
+            </ul>
+         </nav>
+         <div class="header__icons">
+            <div class="fas fa-bars burger" id="menu-btn"></div>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div class="fas fa-user" id="login-btn"></div>
+         </div>
+
+         <!-- login-form -start-->
+         <form class="login-form" id="login-form">
+            <h3>sign in</h3>
+            <input type="email" placeholder="enter your email" class="login-form__box">
+            <input type="password" placeholder="enter yourpasswordl" class="login-form__box">
+            <div class="login-form__remember">
+               <input type="checkbox" id="remember-me">
+               <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="login-form__btn btn">
+            <div class="login-form__links">
+               <a href="#">forget password</a>
+               <a href="#">sign up</a>
+            </div>
+         </form>
+         <!-- login-form -end-->
+      </header>
+      <!-- ===== MAIN ===== -->
+      <main class="main">
+         <!-- ===== Home ===== -->
+         <section class="home" id="home">
+            <div class="home__content">
+               <h3> <span>hi</span> welcome to our pet shop</h3>
+               <a href="#" class="home__btn btn">shop now</a>
+            </div>
+            <img src="image/bottom_wave.png" alt="" class="main__image">
+         </section>
+
+         <!-- ===== about ===== -->
+         <section class="about" id="about">
+            <div class="about__image">
+               <img src="image/about_img.png" alt="">
+            </div>
+            <div class="about__content">
+               <h3>premium <span>pet food</span> manufacturer</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam est esse delectus quaerat magnam hic
+                  facere corrupti sequi nam voluptatum. Unde ducimus error saepe quidem, quia officiis consequuntur
+                  dolore maiores?</p>
+               <a href="" class="about__btn btn">read more</a>
+            </div>
+
+            <div class="food">
+               <div class="food__image">
+                  <img src="image/dog_food.png" alt="">
+               </div>
+               <div class="food__content">
+                  <h3> <span>air dried</span> dog food</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium est quidem, ut sunt
+                     numquam assumenda ipsum dignissimos unde magnam harum, autem incidunt a dolores debitis possimus
+                     consequatur, quos quas?</p>
+                  <div class="food__amount">$15.00 - $30.00</div>
+                  <a href="#"><img class="amount__image" src="image/shop_now_dog.png" alt=""></a>
+               </div>
+            </div>
+
+            <div class="food">
+
+               <div class="food__content">
+                  <h3> <span>air dried</span> cat food</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi accusantium est quidem, ut sunt
+                     numquam assumenda ipsum dignissimos unde magnam harum, autem incidunt a dolores debitis possimus
+                     consequatur, quos quas?</p>
+                  <div class="food__amount">$15.00 - $30.00</div>
+                  <a href="#"><img class="amount__image" src="image/shop_now_cat.png" alt=""></a>
+               </div>
+               <div class="food__image">
+                  <img src="image/cat_food.png" alt="">
+               </div>
+            </div>
+
+         </section>
+
+         <!-- ===== shop ===== -->
+         <section class="shop" id="shop">
+            <h1 class="heading">our <span>products</span> </h1>
+
+            <div class="shop__body">
+
+               <div class="shop__card">
+                  <div class="shop__icons">
+                     <a href="#" class="fas fa-shopping-cart"></a>
+                     <a href="#" class="fas fa-heart"></a>
+                     <a href="#" class="fas fa-eye"></a>
+                  </div>
+                  <div class="shop__image">
+                     <img src="image/product_01.jpg" alt="">
+                  </div>
+                  <div class="shop__content">
+                     <h3>air-dried food</h3>
+                     <div class="shop__amount"> $15.00 - $30.00 </div>
+                  </div>
+               </div>
+
+               <div class="shop__card">
+                  <div class="shop__icons">
+                     <a href="#" class="fas fa-shopping-cart"></a>
+                     <a href="#" class="fas fa-heart"></a>
+                     <a href="#" class="fas fa-eye"></a>
+                  </div>
+                  <div class="shop__image">
+                     <img src="image/product_02.jpg" alt="">
+                  </div>
+                  <div class="shop__content">
+                     <h3>air-dried food</h3>
+                     <div class="shop__amount"> $15.00 - $30.00 </div>
+                  </div>
+               </div>
+
+               <div class="shop__card">
+                  <div class="shop__icons">
+                     <a href="#" class="fas fa-shopping-cart"></a>
+                     <a href="#" class="fas fa-heart"></a>
+                     <a href="#" class="fas fa-eye"></a>
+                  </div>
+                  <div class="shop__image">
+                     <img src="image/product_03.jpg" alt="">
+                  </div>
+                  <div class="shop__content">
+                     <h3>air-dried food</h3>
+                     <div class="shop__amount"> $15.00 - $30.00 </div>
+                  </div>
+               </div>
+
+               <div class="shop__card">
+                  <div class="shop__icons">
+                     <a href="#" class="fas fa-shopping-cart"></a>
+                     <a href="#" class="fas fa-heart"></a>
+                     <a href="#" class="fas fa-eye"></a>
+                  </div>
+                  <div class="shop__image">
+                     <img src="image/product_04.jpg" alt="">
+                  </div>
+                  <div class="shop__content">
+                     <h3>air-dried food</h3>
+                     <div class="shop__amount"> $15.00 - $30.00 </div>
+                  </div>
+               </div>
+
+               <div class="shop__card">
+                  <div class="shop__icons">
+                     <a href="#" class="fas fa-shopping-cart"></a>
+                     <a href="#" class="fas fa-heart"></a>
+                     <a href="#" class="fas fa-eye"></a>
+                  </div>
+                  <div class="shop__image">
+                     <img src="image/product_05.jpg" alt="">
+                  </div>
+                  <div class="shop__content">
+                     <h3>air-dried food</h3>
+                     <div class="shop__amount"> $15.00 - $30.00 </div>
+                  </div>
+               </div>
+
+               <div class="shop__card">
+                  <div class="shop__icons">
+                     <a href="#" class="fas fa-shopping-cart"></a>
+                     <a href="#" class="fas fa-heart"></a>
+                     <a href="#" class="fas fa-eye"></a>
+                  </div>
+                  <div class="shop__image">
+                     <img src="image/product_06.jpg" alt="">
+                  </div>
+                  <div class="shop__content">
+                     <h3>air-dried food</h3>
+                     <div class="shop__amount"> $15.00 - $30.00 </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- ===== services ===== -->
+         <section class="services" id="services">
+            <div class="heading">our <span>services</span> </div>
+            <div class="services__body">
+
+               <div class="services__card">
+                  <i class="fas fa-dog"></i>
+                  <h3>dog boarding</h3>
+                  <a href="#" class="btn">read more</a>
+               </div>
+
+               <div class="services__card">
+                  <i class="fas fa-cat"></i>
+                  <h3>cat boarding</h3>
+                  <a href="#" class="btn">read more</a>
+               </div>
+
+               <div class="services__card">
+                  <i class="fas fa-bath"></i>
+                  <h3>soa & grooming</h3>
+                  <a href="#" class="btn">read more</a>
+               </div>
+
+               <div class="services__card">
+                  <i class="fas fa-drumstick-bite"></i>
+                  <h3>healthy meal</h3>
+                  <a href="#" class="btn">read more</a>
+               </div>
+
+               <div class="services__card">
+                  <i class="fas fa-baseball-ball"></i>
+                  <h3>activity exercise</h3>
+                  <a href="#" class="btn">read more</a>
+               </div>
+
+               <div class="services__card">
+                  <i class="fas fa-heartbeat"></i>
+                  <h3>health care</h3>
+                  <a href="#" class="btn">read more</a>
+               </div>
+
+            </div>
+         </section>
+
+         <!-- ===== plan ===== -->
+         <section class="plan" id="plan">
+            <div class="heading">choose a <span>plan</span> </div>
+
+            <div class="plan__body">
+
+               <div class="plan__item">
+                  <h3 class="plan__title">pet care</h3>
+                  <h3 class="plan__day">1 day</h3>
+                  <i class="fas fa-bicycle plan__icon"></i>
+                  <div class="plan__list">
+                     <p>pet room <span class="fas fa-check"></span> </p>
+                     <p>pet grooming <span class="fas fa-check"></span> </p>
+                     <p>pet exercise <span class="fas fa-check"></span> </p>
+                     <p>pet meals <span class="fas fa-check"></span> </p>
+                  </div>
+                  <div class="plan__amount"><span>$</span>50</div>
+                  <a href="#" class="plan__btn btn">choose plan</a>
+               </div>
+               <div class="plan__item">
+                  <h3 class="plan__title">pet care</h3>
+                  <h3 class="plan__day">10 days</h3>
+                  <i class="fas fa-motorcycle plan__icon"></i>
+                  <div class="plan__list">
+                     <p>pet room <span class="fas fa-check"></span> </p>
+                     <p>pet grooming <span class="fas fa-check"></span> </p>
+                     <p>pet exercise <span class="fas fa-check"></span> </p>
+                     <p>pet meals <span class="fas fa-check"></span> </p>
+                  </div>
+                  <div class="plan__amount"><span>$</span>350</div>
+                  <a href="#" class="plan__btn btn">choose plan</a>
+               </div>
+
+               <div class="plan__item">
+                  <h3 class="plan__title">pet care</h3>
+                  <h3 class="plan__day">30 days</h3>
+                  <i class="fas fa-car-side plan__icon"></i>
+                  <div class="plan__list">
+                     <p>pet room <span class="fas fa-check"></span> </p>
+                     <p>pet grooming <span class="fas fa-check"></span> </p>
+                     <p>pet exercise <span class="fas fa-check"></span> </p>
+                     <p>pet meals <span class="fas fa-check"></span> </p>
+                  </div>
+                  <div class="plan__amount"><span>$</span>650</div>
+                  <a href="#" class="plan__btn btn">choose plan</a>
+               </div>
+
+            </div>
+         </section>
+
+         <!-- ===== contact ===== -->
+         <section class="contact" id="contact">
+            <div class="contact__image">
+               <img src="image/contact_img.png" alt="">
+            </div>
+
+            <form class="contact__form">
+               <h3>contact us</h3>
+               <input type="text" class="contact__box" placeholder="your name">
+               <input type="number" class="contact__box" placeholder="your number">
+               <input type="email" class="contact__box" placeholder="your email">
+               <textarea cols="30" rows="10" placeholder="your message"></textarea>
+               <input type="submit" value="send message" class="contact__btn btn">
+            </form>
+
+         </section>
+
+      </main>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer">
+         <img src="image/top_wave.png" alt="">
+         <div class="footer__share">
+            <a href="" class="btn"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="" class="btn"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="" class="btn"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="" class="btn"><i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="" class="btn"><i class="fab fa-pinterest"></i>pinterest</a>
+         </div>
+         <div class="footer__credit">created by <span>mr. web designer </span> | all rights reserved </div>
+      </footer>
+
+   </div>
+   <!-- ===== MAIN JS ===== -->
+   <script src="js/main.js"></script>
+</body>
+
+</html>
